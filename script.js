@@ -1,4 +1,3 @@
-// Translation data for different languages
 const translations = {
     en: {
         title: "Lux, Scientia et Technologia, Populo et Posteritati",
