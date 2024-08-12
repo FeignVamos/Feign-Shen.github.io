@@ -1,45 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shen Fengyi's Personal Website</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="header-stripes"></div>
-        <h1>Shen Fengyi</h1>
-        <p class="slogan">
-            <span class="latin">Lux, Scientia et Technologia, Populo et Posteritati</span><br>
-            <span class="translation">光明，科学与技术，服务人民与后世</span>
-        </p> <!-- 这里添加校训 -->
-        <nav>
-            <ul>
-                <li><a href="#home" data-lang="home">主页</a></li>
-                <li><a href="#education" data-lang="education">教育背景</a></li>
-                <li><a href="#experience" data-lang="experience">研究经历</a></li>
-                <li><a href="#publications" data-lang="publications">发表的论文</a></li>
-                <li><a href="#contact" data-lang="contact">联系方式</a></li>
-                <li><a href="#updates" data-lang="updates">更新</a></li>
-                <li>
-                    <select id="language-switcher">
-                        <option value="zh">中文</option>
-                        <option value="en">English</option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-stripes"></div>
+        <h1 id="site-title">Lux, Scientia et Technologia, Populo et Posteritati</h1>
+        <!-- Language Switcher Buttons -->
+        <div id="language-switcher">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('zh')">中文</button>
+        </div>
     </header>
 
-    <section id="home">
-        <h2 data-lang="home">主页</h2>
-        <p data-lang="home-desc">欢迎来到我的个人网站！我是Shen Fengyi，现为纳米技术方向的博士候选人。欢迎了解我的教育背景、研究经历和发表论文。</p>
-        <p><a href="#updates" data-lang="home-link">点击这里</a>查看最新消息和更新。</p>
-    </section>
+    <main>
+        <!-- Main content that changes with the language -->
+        <p id="content">Welcome to my website!</p>
+    </main>
 
-    <!-- 其他部分保持不变 -->
+    <footer>
+        <!-- Footer content that also changes with the language -->
+        <p id="footer-content">Lux, Scientia et Technologia, Populo et Posteritati</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
