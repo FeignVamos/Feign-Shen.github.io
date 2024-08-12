@@ -39,6 +39,8 @@ nav ul li a:hover {
 .content-section {
     display: none;
     margin: 20px 0;
+    padding-bottom: 50px; /* Ensure there's space for the fixed footer */
+    position: relative;
 }
 
 #home {
@@ -68,4 +70,16 @@ button:hover {
     nav ul li {
         margin: 10px 0;
     }
+}
+
+/* Section footer styling */
+.section-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-top: 1px solid #e5c100; /* Royal Madrid Gold */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top */
 }
