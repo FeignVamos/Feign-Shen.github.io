@@ -1,17 +1,60 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    color: #0056b3;
+    background-color: #ffffff;
+    color: #000080; /* Royal Madrid Blue */
     text-align: center;
 }
 
-p {
+header {
+    background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
+    border-bottom: 3px solid #e5c100; /* Royal Madrid Gold */
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00529f; /* Royal Madrid Blue */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #003d7a; /* Darker shade of blue */
+}
+
+.content-section {
+    display: none;
+    margin: 20px 0;
+}
+
+#home {
+    display: block; /* Show the home section by default */
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00529f; /* Royal Madrid Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d7a;
 }
