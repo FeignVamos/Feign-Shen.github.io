@@ -1,25 +1,35 @@
 const translations = {
     en: {
-        title: "Lux, Scientia et Technologia, Populo et Posteritati",
-        home: "Welcome to my website!",
-        research: "Research",
+        siteTitle: "Lux, Scientia et Technologia, Populo et Posteritati",
+        homeNav: "Home",
+        researchNav: "Research",
+        publicationsNav: "Publications",
+        contactNav: "Contact",
+        homeTitle: "Welcome to my website!",
+        homeContent: "This is the home section.",
+        researchTitle: "Research",
         researchContent: "This is the research section where you can talk about your research interests.",
-        publications: "Publications",
+        publicationsTitle: "Publications",
         publicationsContent: "This is the publications section where you can list your academic papers and books.",
-        contact: "Contact",
+        contactTitle: "Contact",
         contactContent: "This is the contact section with your contact details.",
-        footer: "Lux, Scientia et Technologia, Populo et Posteritati",
+        footerContent: "Lux, Scientia et Technologia, Populo et Posteritati",
     },
     zh: {
-        title: "光明，科学与技术，服务人民与后世",
-        home: "欢迎来到我的网站！",
-        research: "研究",
+        siteTitle: "光明，科学与技术，服务人民与后世",
+        homeNav: "首页",
+        researchNav: "研究",
+        publicationsNav: "出版物",
+        contactNav: "联系方式",
+        homeTitle: "欢迎来到我的网站！",
+        homeContent: "这是主页部分。",
+        researchTitle: "研究",
         researchContent: "这是研究部分，您可以在这里讨论您的研究兴趣。",
-        publications: "出版物",
+        publicationsTitle: "出版物",
         publicationsContent: "这是出版物部分，您可以在这里列出您的学术论文和书籍。",
-        contact: "联系方式",
+        contactTitle: "联系方式",
         contactContent: "这是联系部分，包含您的联系方式。",
-        footer: "光明，科学与技术，服务人民与后世",
+        footerContent: "光明，科学与技术，服务人民与后世",
     },
 };
 
@@ -28,12 +38,10 @@ function switchLanguage(lang) {
     document.documentElement.lang = lang; // Update the <html> lang attribute
 
     // Update content with the selected language
-    document.getElementById('site-title').textContent = translations[lang].title;
-    document.getElementById('home-content').textContent = translations[lang].home;
-    document.getElementById('research-content').textContent = translations[lang].researchContent;
-    document.getElementById('publications-content').textContent = translations[lang].publicationsContent;
-    document.getElementById('contact-content').textContent = translations[lang].contactContent;
-    document.getElementById('footer-content').textContent = translations[lang].footer;
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        element.textContent = translations[lang][key] || element.textContent;
+    });
 
     // Save the user's language preference
     localStorage.setItem('preferredLanguage', lang);
