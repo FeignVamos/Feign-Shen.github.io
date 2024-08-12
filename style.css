@@ -1,133 +1,30 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #000080; /* Royal Madrid Blue */
+    text-align: center;
 }
 
 header {
-    background: #003399; /* Real Madrid blue */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    position: relative;
-}
-
-.header-stripes {
-    background: linear-gradient(90deg, #fff 25%, #f4c842 25%, #f4c842 50%, #fff 50%, #fff 75%, #f4c842 75%);
-    height: 10px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-header h1 {
-    margin: 0.5rem 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 0.5rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-bottom: 3px solid #e5c100; /* Royal Madrid Gold */
 }
 
 #language-switcher {
-    background: #003399;
-    color: #fff;
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00529f; /* Royal Madrid Blue */
+    color: #ffffff;
     border: none;
-    padding: 0.5rem;
-    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-section h2 {
-    margin-top: 0;
-    color: #003399; /* Real Madrid blue */
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 10px;
-    background: #003399; /* Real Madrid blue */
-}
-
-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 10px;
-    background: #fff;
-    border-left: 10px solid #003399; /* Real Madrid blue */
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #003399; /* Real Madrid blue */
-    color: #fff;
-    position: relative;
-}
-
-.footer-stripes {
-    background: linear-gradient(90deg, #fff 25%, #f4c842 25%, #f4c842 50%, #fff 50%, #fff 75%, #f4c842 75%);
-    height: 10px;
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-a {
-    color: #003399; /* Real Madrid blue */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.slogan {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #f4c842; /* Real Madrid gold */
-    margin-top: 0.5rem;
-}
-
-.slogan .latin {
-    font-family: 'Times New Roman', Times, serif;
-    display: block;
-    font-style: italic;
-}
-
-.slogan .translation {
-    font-family: Arial, sans-serif;
-    display: block;
+button:hover {
+    background-color: #003d7a; /* Darker shade of blue for hover effect */
 }
