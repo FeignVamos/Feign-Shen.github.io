@@ -1,4 +1,4 @@
-const translations = {
+Iconst translations = {
     en: {
         siteTitle: "Lux, Scientia et Technologia, Populo et Posteritati",
         homeNav: "Home",
@@ -18,7 +18,7 @@ const translations = {
         publicationsContent: "My published work includes contributions to several high-impact journals:",
         rscReview: "An invited review paper on wearable piezoelectric biomedical sensors, currently in preparation for submission to RSC Advances.",
         contactTitle: "Contact",
-        contactContent: "This is the contact section with your contact details.",
+        contactContent: "This is my Personal email: SFYBeiYi@outlook.com",
         footerContent: "Lux, Scientia et Technologia, Populo et Posteritati",
     },
     zh: {
@@ -40,7 +40,7 @@ const translations = {
         publicationsContent: "我的出版作品包括对多本高影响力期刊的贡献：",
         rscReview: "一篇关于可穿戴压电生物医学传感器的受邀评论文章，正在准备提交给RSC Advances。",
         contactTitle: "联系方式",
-        contactContent: "这是联系部分，包含您的联系方式。",
+        contactContent: "这是我的个人邮箱：SFYB诶Yi@outlook.com。",
         footerContent: "光明，科学与技术，服务人民与后世",
     },
 };
