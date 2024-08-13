@@ -68,10 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to show the selected section
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => section.style.display = 'none');
-
-    const selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
-        selectedSection.style.display = 'block';
-    }
+    sections.forEach(section => section.style.display = 'none'); // Hide all sections
+    document.getElementById(sectionId).style.display = 'block'; // Show the selected section
 }
