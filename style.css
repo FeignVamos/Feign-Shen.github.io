@@ -3,6 +3,8 @@ body {
     background-color: #ffffff;
     color: #000080; /* Royal Madrid Blue */
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -39,8 +41,6 @@ nav ul li a:hover {
 .content-section {
     display: none;
     margin: 20px 0;
-    padding-bottom: 50px; /* Ensure there's space for the fixed footer */
-    position: relative;
 }
 
 #home {
@@ -61,25 +61,13 @@ button:hover {
     background-color: #003d7a;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-/* Section footer styling */
 .section-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e5c100; /* Royal Madrid Gold */
     position: fixed;
-    bottom: 0;
     width: 100%;
+    left: 0;
+    bottom: 0;
     background-color: #f0f0f0;
-    border-top: 1px solid #e5c100; /* Royal Madrid Gold */
-    padding: 10px;
-    text-align: center;
-    z-index: 1000; /* Ensure it stays on top */
 }
