@@ -1,82 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fengyi Shen's Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 id="site-title" data-translate="siteTitle">Lux, Scientia et Technologia, Populo et Posteritati</h1>
+<!-- Research Section -->
+<section id="research" class="content-section">
+    <h2 data-translate="researchTitle">Research</h2>
+    <p data-translate="researchContent">
+        My research is primarily focused on the following areas:
+        <ul>
+            <li><strong>Energy Conversion and Harvesting:</strong> Developing novel methods for harvesting and converting energy at the micro/nano scale, with applications in self-powered devices.</li>
+            <li><strong>Biomedical Sensors:</strong> Designing and optimizing wearable piezoelectric sensors for real-time health monitoring, particularly in detecting physiological signals.</li>
+            <li><strong>Micro/Nano Systems:</strong> Investigating microfluidic devices and their integration with energy harvesting systems for lab-on-a-chip applications.</li>
+            <li><strong>Machine Learning:</strong> Utilizing machine learning algorithms to enhance the performance and functionality of micro/nano devices, particularly in optimizing sensor data processing.</li>
+        </ul>
+        I am also exploring the intersection of these areas, focusing on creating energy-efficient systems that can power advanced biomedical devices.
+    </p>
+    <p>For more details on my research contributions, please visit my <a href="https://scholar.google.com/citations?hl=zh-CN&user=hQvKO-0AAAAJ" target="_blank">Google Scholar profile</a>.</p>
+    <footer class="section-footer">
+        <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
+    </footer>
+</section>
 
-        <!-- Navigation Bar -->
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home" onclick="showSection('home')"><span data-translate="homeNav">Home</span></a></li>
-                <li><a href="#research" onclick="showSection('research')"><span data-translate="researchNav">Research</span></a></li>
-                <li><a href="#publications" onclick="showSection('publications')"><span data-translate="publicationsNav">Publications</span></a></li>
-                <li><a href="#contact" onclick="showSection('contact')"><span data-translate="contactNav">Contact</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Language Switcher Buttons -->
-        <div id="language-switcher">
-            <button onclick="switchLanguage('en')">English</button>
-            <button onclick="switchLanguage('zh')">中文</button>
-        </div>
-    </header>
-
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="content-section">
-            <h2 data-translate="homeTitle">Welcome to my website!</h2>
-            <p data-translate="homeContent">I am Fengyi Shen, currently pursuing my M.S. in Nanotechnology at the Royal Institute of Technology, with a strong background in Electrical and Computer Engineering. My research interests lie in energy technology, machine learning, biomedical sensors, and micro/nano systems.</p>
-            <footer class="section-footer">
-                <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
-            </footer>
-        </section>
-
-        <!-- Research Section -->
-        <section id="research" class="content-section">
-            <h2 data-translate="researchTitle">Research</h2>
-            <p data-translate="researchContent">My research experience spans various fields including energy conversion, biomedical sensors, micro/nano systems, and machine learning. I have actively contributed to projects that involve energy harvesting, wearable biomedical sensors, and the optimization of microfluidic devices.</p>
-            <footer class="section-footer">
-                <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
-            </footer>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="content-section">
-            <h2 data-translate="publicationsTitle">Publications</h2>
-            <p data-translate="publicationsContent">I have co-authored several papers in prestigious journals, including:
-                <ul>
-                    <li><a href="https://doi.org/10.1016/j.nanoen.2022.107891" target="_blank">Nano Energy - Co-first author</a></li>
-                    <li><a href="https://doi.org/10.3390/nano12122100" target="_blank">Nanomaterials - Co-third author</a></li>
-                    <li>An invited review paper for RSC Advances on wearable piezoelectric biomedical sensors (in preparation)</li>
-                </ul>
-            </p>
-            <footer class="section-footer">
-                <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
-            </footer>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="content-section">
-            <h2 data-translate="contactTitle">Contact</h2>
-            <p data-translate="contactContent">Feel free to reach out to me via the following methods:
-                <ul>
-                    <li>Email: <a href="mailto:SFYBeiYi@outlook.com">SFYBeiYi@outlook.com</a></li>
-                    <li>Phone: +86 13218223668</li>
-                </ul>
-            </p>
-            <footer class="section-footer">
-                <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
-            </footer>
-        </section>
-    </main>
-
-    <!-- Link to the JavaScript file -->
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Publications Section -->
+<section id="publications" class="content-section">
+    <h2 data-translate="publicationsTitle">Publications</h2>
+    <p data-translate="publicationsContent">
+        My published work includes contributions to several high-impact journals:
+        <ul>
+            <li><a href="https://doi.org/10.1016/j.nanoen.2022.107891" target="_blank">Nano Energy</a> - Co-first author on a paper discussing advancements in energy harvesting technologies.</li>
+            <li><a href="https://doi.org/10.3390/nano12122100" target="_blank">Nanomaterials</a> - Co-third author on a paper exploring the development of wearable biomedical sensors for health monitoring.</li>
+            <li>An invited review paper on wearable piezoelectric biomedical sensors, currently in preparation for submission to RSC Advances.</li>
+        </ul>
+        These publications reflect my interdisciplinary approach to integrating energy technologies with biomedical applications.
+    </p>
+    <footer class="section-footer">
+        <p data-translate="footerContent">Lux, Scientia et Technologia, Populo et Posteritati</p>
+    </footer>
+</section>
